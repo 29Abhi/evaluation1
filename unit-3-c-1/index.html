@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+  #show_products{
+    margin-left: 450px;
+    margin-top: 30px;
+  }
+#admin{
+     width: 40%;
+     height: 400px;
+     /* border: 1px solid black; */
+     margin: auto;
+   }
+   #products input{
+    box-sizing: border-box;
+width: 100%;
+border: solid black 1px;
+padding: 5px;
+   }
+   #products button{
+    box-sizing: border-box;
+width: 100%;
+border: solid black 1px;
+padding: 5px;
+   }
+   
+
+  </style>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+    <a href="./inventory.html"> <button id="show_products">Show products</button></a>
+    </div>
+    <div id="admin" >
+      <h2>Add Products</h2>
+      <form  id="products">
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+        <input type="text" name="" id="type"  placeholder="Type">
+        <br><br>
+        <input type="text" name="" id="desc" placeholder="Description" >
+        <br><br>
+        <input type="number" name="" id="price" placeholder="Price">
+        <br><br>
+        <input type="url" name="" id="image" placeholder="Image">
+        <br><br>
+        <a href="inventory.html" > <button id="add_produc">Add Product</button></a>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
